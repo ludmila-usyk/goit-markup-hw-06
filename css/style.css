@@ -293,6 +293,8 @@ li {
     display: flex;
     margin-right: auto;
     margin-left: auto;
+    text-align:center;
+    justify-content: center
 }
 .backdrop {
     position: fixed;
@@ -324,6 +326,8 @@ li {
     padding-right: 8px;
 }
 .modal-btn {
+    position: absolute;
+    align-items: center;
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -333,19 +337,56 @@ li {
 .modal-form{
     padding: 40px;
 }
+.icon-form {
+    position: absolute;
+}
+.form-input {
+    position: relative;
+}
 
-.modal-h3 {
-    display: flex;
-    padding: 2px 40px 12px 40px;
-}
-.form-value:not(:last-child) {
-    padding-bottom: 10px;
-}
-/* .form-value {
+input, textarea {
+    padding: 8px;
+    font-family: inherit;
     border-radius: 4px;
     border-color: rgba(33, 33, 33, 0.2);
-} */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    color: #757575;
+    font-family: Roboto;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    line-height: 1.17;
+}
+.modal-h3 {
+    display: inline-block;
+    padding: 2px 40px 12px 40px;
+    font-family: Roboto;
+    font-style: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+}
+.agreement{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 
+label:hover,
+label:focus {
+    color: var(--accent-color);
+}
+.form {
+    padding: 40px;
+}
+textarea {
+    resize: none;
+}
 .header {
     border-bottom: 1px solid #ECECEC;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -211,18 +211,31 @@
       <form class="form">
         <h3 class="modal-h3">Оставьте свои данные, мы вам перезвоним</h3>
         <div class="form-value">
-          <label for="name">NAME</label>
-           <input type="name" name="name" />
+          <label for="name">Имя
+           <input type="name" name="name" class="form-input"/><svg class="icon-form" width="12" height="12"><use href="./sprite.svg#icon-form-person"></use></svg>
+           </label>
         </div>
         <div class="form-value">
-          <label for="tel">tell</label>
-           <input type="tel" name="tel" />
+          <label for="tel">Телефон
+           <input type="tel" name="tel" /><svg class="icon-form" width="13" height="13"><use href="./sprite.svg#icon-form-tel"></use></svg>
+           </label>
         </div>
         <div class="form-value">  
-          <label for="mail">mail</label>
-           <input type="email" name="email" />
+          <label for="mail">Почта
+           <input type="email" name="email" /><svg class="icon-form" width="15" height="12"><use href="./sprite.svg#icon-form-letter"></use></svg>
+           </label>
         </div>
-        <button type="submit">Отправить</button>
+        <div class="form-value">
+          <label>Комментарий
+            <textarea name="Комментарий" rows="5" placeholder="Введите текст..."></textarea>
+          </label>
+        </div>
+        <div class="agreement">
+          <label>
+            <input type="checkbox" name="text" value="" checked />Соглашаюсь с рассылкой и принимаю<a href="" target="_blank" rel="noopener noreferrer">Условия договора</a>
+          </label>
+        </div>
+        <button type="submit" class="main-button">Отправить</button>
       </form>
   </div>
 </div>
