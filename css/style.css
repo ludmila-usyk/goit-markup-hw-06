@@ -270,7 +270,6 @@ li {
     border-radius: 2px;
     background-color: var(--accent-color);
     color: var(--accent-color);
-    margin-top: 28px;
     width: 100%;
     display: block;
 }
@@ -471,7 +470,6 @@ fill: var(--border-color);
 
 .site-nav {
     display: flex;
-    padding-top: 32px;
 }
 .site-nav a:hover,
 .site-nav a:focus {
