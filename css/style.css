@@ -339,8 +339,11 @@ li {
 }
 .icon-form {
     position: relative;
-    top: 10px;
+    top: 14px;
     left: 15px;
+}
+.form-input:focus ~ .icon-form {
+    fill: var(--accent-color);
 }
 .form-input {
     position: absolute;
@@ -377,6 +380,7 @@ textarea {
     width: 102%;
     border-bottom-left-radius: 2px;
     border-radius: 4px;
+    padding: 12px 16px;
     border-color: rgba(33, 33, 33, 0.2);
 }
 
