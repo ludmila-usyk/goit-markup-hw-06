@@ -266,6 +266,8 @@ li {
 
 .current::after {
     content: "";
+    position: absolute;
+    bottom: 0;
     height: 4px;
     border-radius: 2px;
     background-color: var(--accent-color);
