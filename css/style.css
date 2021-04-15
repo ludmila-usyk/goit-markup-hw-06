@@ -341,11 +341,13 @@ li {
     background-color: var(--white-color);
     color: var(--accent-color);
 }
-
 .icon-form {
     position: relative;
     top: 14px;
     left: 15px;
+}
+.conteiner-input {
+    height: 35px;
 }
 .form-input:focus ~ .icon-form {
     fill: var(--accent-color);
@@ -384,7 +386,6 @@ textarea:focus {
     color: var(--accent-color);
     text-decoration: underline;
 }
-
 .form-input {
     padding: 10px 10px 10px 40px;
     width: 100%;
@@ -407,6 +408,7 @@ label {
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
+    margin-top: 10px;
     color: #757575;
     font-family: Roboto;
     font-size: 12px;
