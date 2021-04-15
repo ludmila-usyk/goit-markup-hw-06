@@ -48,6 +48,7 @@ a {
 .footer-web {
     display: flex;
     align-items: baseline;
+    justify-content: space-around;
 }
 .footer-input {
     display: flex;
@@ -127,12 +128,10 @@ li {
     display: inline-flex;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .team-new {
     padding: 30px;
 }
-
 .hero-team {
     font-size: 44px;
     line-height: 1.36;
@@ -211,7 +210,6 @@ li {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--black-color);
-    /* margin-top: 30px; */
     margin-bottom: 10px;
     text-align: center;
 }
@@ -222,6 +220,7 @@ li {
     letter-spacing: 0.03em;
     color: var(--grey-light-color);
     text-align: center;
+    margin-bottom: 16px;
 }
 .adress {
     font-family: Roboto;
@@ -324,21 +323,25 @@ li {
     min-height: 581px;
     min-width: 528px;
     background-color: var(--white-color);
-    padding-top: 8px;
-    padding-right: 8px;
+    padding: 40px;
 }
 .modal-btn {
     position: absolute;
     align-items: center;
     height: 30px;
     width: 30px;
+    margin-top: -24px;
+    margin-right: -24px;
     border-radius: 50%;
-    border-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 1);
 }
-.modal-form{
-    padding: 40px;
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--white-color);
+    color: var(--accent-color);
 }
+
 .icon-form {
     position: relative;
     top: 14px;
@@ -347,11 +350,22 @@ li {
 .form-input:focus ~ .icon-form {
     fill: var(--accent-color);
 }
+.form-input:hover, .form-input:focus {
+    border: 1px solid var(--accent-color);
+    outline-color: var(--accent-color);
+}
+textarea:hover,
+textarea:focus {
+    border: 1px solid var(--accent-color);
+    outline-color: var(--accent-color);
+}
 .form-input {
     position: absolute;
 }
 .form-value {
-    margin-bottom: 28px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    display: flex;
 }
 .agreement input[type='checkbox'] {
     width: 16px;
@@ -373,7 +387,6 @@ li {
     width: calc(100% - (40px + 40px));
     font-family: inherit;
     border-radius: 4px;
-    /* border-bottom-left-radius: 1px; */
     border-color: rgba(33, 33, 33, 0.2);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -396,11 +409,11 @@ label {
     letter-spacing: 0.01em;
     line-height: 1.17;
 }
-.modal-h3 {
+.title-form {
     display: inline-block;
-    padding: 2px 40px 12px 40px;
+    margin-bottom: 12px;
     font-family: Roboto;
-    font-style: bold;
+    font-weight: bold;
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
@@ -414,9 +427,7 @@ label:hover,
 label:focus {
     color: var(--accent-color);
 }
-.form {
-    padding: 40px;
-}
+
 textarea {
     resize: none;
 }
@@ -478,6 +489,7 @@ textarea {
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    border: none;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -500,9 +512,9 @@ textarea {
     margin: 0 auto;
 }
 .social-icons .icon{
-width: 20px;
-height: 20px;
-fill: var(--border-color);
+    width: 20px;
+    height: 20px;
+    fill: var(--border-color);
 }
 .social-icons-item:not(:last-child){
     margin-right: 10px;
@@ -652,7 +664,6 @@ a:focus .item-overlay {
     align-items: center;
     position: absolute;
     top: 1px;
-/* top: 0px; */
     left: 0;
     width: 100%;
     height: 100%;
@@ -686,8 +697,8 @@ ul {
     margin: 0;
 }
 .team-item {
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 .team-item-grid:not(:last-child) {
     margin-right: 30px;
@@ -797,7 +808,7 @@ img {
     fill: var(--accent-color);
 }
 .input{
-margin-left: 93px;
+/* margin-left: 93px; */
 stroke: solid rgba(255, 255, 255, 0.3);
 }
 .send {
@@ -820,7 +831,6 @@ stroke: solid rgba(255, 255, 255, 0.3);
 }
 .footer-button {
     padding: 10px 28px 10px 29px;
-    margin-bottom: 9px;
     font-size: 16px;
     letter-spacing: 0.06em;
     font-weight: 700;
@@ -830,13 +840,10 @@ stroke: solid rgba(255, 255, 255, 0.3);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-button{
-   vertical-align: middle;
+    vertical-align: middle;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.address-part {
-    margin-right: 70px;
 }
 .input-field {
     margin-right: 12px;
