@@ -327,11 +327,11 @@ li {
 }
 .modal-btn {
     position: absolute;
+    top: 8px;
+    right: 8px;
     align-items: center;
     height: 30px;
     width: 30px;
-    margin-top: -24px;
-    margin-right: -24px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 1);
@@ -350,11 +350,12 @@ li {
 .form-input:focus ~ .icon-form {
     fill: var(--accent-color);
 }
-.form-input:hover, .form-input:focus {
+/* .form-input:hover, */
+ .form-input:focus {
     border: 1px solid var(--accent-color);
     outline-color: var(--accent-color);
 }
-textarea:hover,
+/* textarea:hover, */
 textarea:focus {
     border: 1px solid var(--accent-color);
     outline-color: var(--accent-color);
