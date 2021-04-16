@@ -105,7 +105,8 @@ ul {
     left: 15px;
 }
 .conteiner-input {
-
+    position: relative;
+    height: 40px;
 }
 .form-input:focus~.icon-form {
     fill: var(--accent-color);
@@ -131,7 +132,18 @@ textarea:focus {
     margin-bottom: 10px;
     flex-direction: column;
     display: flex;
-    position: relative;
+    height: 58px;
+}
+.form-value-comment {
+    margin-bottom: 20px;
+    flex-direction: column;
+    display: flex;
+    height: 142px;
+}
+.form {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 .agreement input[type='checkbox'] {
     width: 16px;
@@ -165,11 +177,11 @@ textarea {
     border-color: rgba(33, 33, 33, 0.2);
     resize: none;
 }
-label {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 8px;
-    margin-top: 10px;
+.label-modal {
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin-bottom: 4px;
+    /* margin-top: 10px; */
     color: #757575;
     font-family: Roboto;
     font-size: 12px;
