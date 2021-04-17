@@ -196,6 +196,7 @@ textarea {
 }
 .title-form {
     display: inline-block;
+    width: 100%;
     margin-bottom: 12px;
     font-family: Roboto;
     font-weight: bold;
