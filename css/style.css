@@ -49,12 +49,18 @@ ul {
     margin: 0;
 }
 
-/* .team-list {
-    margin: 0;
-    padding: 6px 22px 6px 22px;
+/* модальное окно */
+/* .form-input:required {
+    border-color: red;
+} */
+/* .form-input:placeholder-shown {
+    border-color: #ffa000;
+}
+.form-input:not(:placeholder-shown) {
+    border-color: green;
 } */
 
-/* модальное окно */
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -108,7 +114,6 @@ ul {
     position: relative;
     height: 40px;
     margin-bottom: 10px;
-    margin-top: 4px;
 }
 .form-input:focus~.icon-form {
     fill: var(--accent-color);
@@ -127,19 +132,6 @@ textarea:focus {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .form-value {
-    margin-bottom: 10px;
-    flex-direction: column;
-    display: flex;
-    height: 58px;
-}
-.form-value-comment {
-    margin-bottom: 20px;
-    flex-direction: column;
-    display: flex;
-    height: 142px;
-} */
 .form {
     width: 100%;
     margin-right: auto;
@@ -182,17 +174,12 @@ textarea {
 
 }
 .label-modal {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* margin-bottom: 4px;
-    margin-top: 10px; */
-    /* margin-top: 10px; */
     color: #757575;
     font-family: Roboto;
     font-size: 12px;
     letter-spacing: 0.01em;
     line-height: 1.17;
-
+    margin-bottom: 4px;
 }
 .title-form {
     display: inline-block;
